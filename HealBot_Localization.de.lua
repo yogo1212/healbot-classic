@@ -169,8 +169,10 @@ HB_SPELL_PATTERN_HOLY_LIGHT          = "Heilt ein befreundetes Ziel um (%d+) bis
 HB_SPELL_PATTERN_FLASH_OF_LIGHT      = "Heilt ein befreundetes Ziel um (%d+) bis (%d+) Punkt%(e%)";
 HB_SPELL_PATTERN_HEALING_WAVE        = "Heilt ein befreundetes Ziel um (%d+) bis (%d+) Punkt%(e%)";
 HB_SPELL_PATTERN_LESSER_HEALING_WAVE = "Heilt ein befreundetes Ziel um (%d+) bis (%d+) Punkt%(e%)";
-HB_SPELL_PATTERN_REJUVENATION        = "Heilt das Ziel von (%d+) \195\188ber (%d+) Sek";
-HB_SPELL_PATTERN_REJUVENATION1       = "Heilt das Ziel von (%d+) bis (%d+) \195\188ber (%d+) Sek";
+HB_SPELL_PATTERN_REJUVENATION        = "Heilt beim Ziel (%d+) Sek. lang (%d+) Punkt%(e%) Schaden";
+HB_SPELL_PATTERN_REJUVENATION1       = "Heilt beim Ziel (%d+) Sek. lang (%d+) bis (%d+) Punkt%(e%) Schaden";
+--HB_SPELL_PATTERN_REJUVENATION        = "Heilt das Ziel von (%d+) \195\188ber (%d+) Sek";
+--HB_SPELL_PATTERN_REJUVENATION1       = "Heilt das Ziel von (%d+) bis (%d+) \195\188ber (%d+) Sek";
 
 HB_TOOLTIP_MANA                      = "^(%d+) Mana$";
 HB_TOOLTIP_RANGE                     = "(%d+) m";

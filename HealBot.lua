@@ -1270,11 +1270,11 @@ function HealBot_InitGetSpellData(spell, id, class)
           tmpTest,tmpTest,HB_HealsMin,HB_HealsMax,tmpTest,HB_HealsExt = string.find(line, HB_SPELL_PATTERN_REGROWTH1 );
         end
       elseif strsub(spell, 0, 9) == strsub(HEALBOT_REJUVENATION, 0, 9) then
-        tmpTest,tmpTest,HB_HealsExt,HB_duration = string.find(line, HB_SPELL_PATTERN_REJUVENATION );  
+        tmpTest,tmpTest,HB_duration,HB_HealsExt = string.find(line, HB_SPELL_PATTERN_REJUVENATION );
         HB_HealsMin=0;
         HB_HealsMax=0;
         if ( HB_HealsExt == nil ) then
-          tmpTest,tmpTest,HB_HealsExt,tmpTest,HB_duration = string.find(line, HB_SPELL_PATTERN_REJUVENATION1 );
+          tmpTest,tmpTest,HB_duration,HB_HealsExt,tmpTest = string.find(line, HB_SPELL_PATTERN_REJUVENATION1 );
         end
       elseif strsub(spell, 0, 7) == strsub(HEALBOT_HEALING_TOUCH, 0, 7) then
         tmpTest,HB_HealsMin,HB_HealsMax = HealBot_Generic_Patten(line, HB_SPELL_PATTERN_HEALING_TOUCH ); 
