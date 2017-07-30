@@ -1225,6 +1225,8 @@ function HealBot_InitGetSpellData(spell, id, class)
 	  HB_cast = 0;
 	elseif ( tmpText ) then
       tmpTest,tmpTest,HB_cast = string.find(line, HB_TOOLTIP_CAST_TIME ); 
+      -- Germans separate using comma
+      HB_cast = string.gsub(HB_cast, ",", ".")
     end
   else
     HealBot_Report_Error( "================================" );
